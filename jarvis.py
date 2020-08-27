@@ -28,7 +28,7 @@ def wishMe():
     else:
         speak("Good Evening!")  
 
-    speak("I am Jarvis Sir. Please tell me how may I help you")       
+    speak("I am Jarvis Sir. Please tell me how may I help you")
 
 def takeCommand():
     #It takes microphone input from the user and returns string output
@@ -75,6 +75,7 @@ if __name__ == "__main__":
 
         elif 'open youtube' in query:
             webbrowser.open("youtube.com")
+            speak("Yes sir I am opening youtube for you")
 
         elif 'open google' in query:
             webbrowser.open("google.com")
@@ -99,11 +100,11 @@ if __name__ == "__main__":
 
         elif 'email ' in query:
             try:
-                speak("What should I say?")
+                speak("What should I say sir?")
                 content = takeCommand()
                 to = "yourEmail@gmail.com"
                 sendEmail(to, content)
                 speak("Email has been sent!")
             except Exception as e:
                 print(e)
-                speak("Sorry sir. I am not able to send this email")
+                speak("Sorry sir. I am not able to send this email. Please try later")
