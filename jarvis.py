@@ -1,7 +1,7 @@
 import pyttsx3 #pip install pyttsx3
-import speech_recognition as sr #pip install speechRecognition
+import speech_recognition as sr 
 import datetime
-import wikipedia #pip install wikipedia
+import wikipedia 
 import webbrowser
 import os
 import smtplib
@@ -22,13 +22,13 @@ def wishMe():
     if hour>=0 and hour<12:
         speak("Good Morning!")
 
-    elif hour>=12 and hour<18:
+    elif hour>=12 and hour<19:
         speak("Good Afternoon!")   
 
     else:
         speak("Good Evening!")  
 
-    speak("I am Jarvis Sir. Please tell me how may I help you")
+    speak("Sir,I am Jarvis. Please tell me how may I help you")
 
 def takeCommand():
     #It takes microphone input from the user and returns string output
